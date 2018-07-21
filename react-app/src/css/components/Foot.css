@@ -1,0 +1,105 @@
+.footer__content--top,
+.footer__content--bottom {
+  padding: 70px 0;
+}
+
+.footer__content--top {
+  background-color: #2d333b;
+}
+
+.footer__content--top .left-content {
+  max-width: 490px;
+}
+
+.footer__content--top form,
+.payment-card {
+  position: relative;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.footer__content--top form .form-control {
+  margin-bottom: 0;
+}
+
+.footer__content--top form .btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 0;
+  width: 22px;
+  height: 24px;
+  cursor: pointer;
+  text-indent: 999999px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 24px;
+  color: #aaa;
+  transition: inherit !important;
+}
+
+.footer__content--top h3 {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 0 15px;
+}
+@media (max-width: 991px) {
+  .footer__content--top {
+    padding-top: 120px;
+  }
+}
+.payment-card ul li {
+  float: left;
+  margin-right: 22px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.payment-card ul li:last-child {
+  margin-right: 0;
+}
+
+/* footer__content--bottom */
+
+.footer__content--bottom {
+  overflow: hidden;
+  background-color: #22272d;
+}
+
+.footer__content--widget {
+  width: 20%;
+  float: left;
+}
+
+.footer__content--widget span {
+  display: block;
+  margin-top: 15px;
+}
+
+.footer-logo {
+  margin-bottom: 40px;
+}
+
+.footer__content--widget h3 {
+  font-size: 14px;
+  color: #fff;
+  margin: 0 0 25px;
+  text-transform: uppercase;
+}
+
+.footer__content--widget li {
+  margin-bottom: 10px;
+}
+
+.footer__content--widget li:last-child {
+  margin-bottom: 0;
+}
+
+.footer__content--widget li i {
+  width: 30px;
+}
+
+.footer__content--widget a:hover {
+  color: #fff;
+}

@@ -1,0 +1,45 @@
+.bar {
+	background-color: #f1f1f1;
+  }
+  @media (max-width: 767px) {
+	.bar {
+		display: none;
+	}
+  }
+  .options {
+	min-width: 400px;
+  }
+  .options__container {
+	padding-right: 5px;
+  }
+  .help {
+	position: relative;
+  }
+  .help .help__button {
+	color: #ffffff;
+	border-color: #1e2f5a;
+	background-color: #1e2f5a;
+	padding: 10px 30px;
+  }
+  .help .help__button:hover {
+	color: #1e2f5a;
+	background-color: #ffffff;
+  }
+  .currency {
+	position: relative;
+	display: inline-block;
+  }
+  .currency .currency__select {
+	color: #858585;
+	position: relative;
+	padding: 0px 5px;
+  }
+  .currency__span--toggle {
+	position: absolute;
+	top: 8px;
+	right: 25px;
+	vertical-align: middle;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 5px solid #858585;
+  }

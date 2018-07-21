@@ -1,0 +1,20 @@
+.section {
+    background: #f8f8f8;
+    top: 20px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .section__content--heading {
+    margin-bottom: 40px;
+  }
+  @media(min-width:768px) and (max-width:991px) {
+    .section {
+      top: 80px;
+    }
+  }
+  @media(max-width:767px) {
+    .section {
+      top: 100px;
+    }
+  }

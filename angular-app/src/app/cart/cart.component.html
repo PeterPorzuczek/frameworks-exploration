@@ -1,0 +1,31 @@
+<div class='cart ml-auto'>
+    <ul class='cart__header'>
+      <li class='cart__header--title'><h5>Cart</h5></li>
+      <li class='menu__dropdown'>
+        <span class='cart__header--number'>5</span>
+        <div class='cart__content menu__dropdown--list'>
+          <ul>
+            <li class='item' *ngFor="let item of items">
+              <div class='item__content'>
+                <span class='item__content--image'>
+                  <img  src='../assets/images/none.svg'
+                      alt='Image'
+                      class='img-fluid'>
+                </span>
+                <span class='item__content--title'>{{item.title}}</span>
+                <span class='item__content--color'>{{item.color}}</span>
+                <span class='item__content--price'><del>$560</del>$299</span>
+              </div>
+            </li>
+          </ul>
+          <div class='cart__content--total-price'>
+              <span><strong>Total Price: </strong>$598.00</span>
+          </div>
+          <div class='cart__content--action text-center p-1 row'>
+              <a class='btn btn-primary col' href='#'>View Cart</a>
+              <a class='btn btn-primary col' href='#'>Checkout</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>

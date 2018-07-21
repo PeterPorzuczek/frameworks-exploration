@@ -1,0 +1,28 @@
+.bar {
+    background-color: #ffffff;
+    padding: 25px 0;
+  }
+  .logo {
+    float: left;
+    height: 50px;
+    padding: 5px 0;
+    margin-right: 75px;
+    width: 200px;
+  }
+  .logo .logo__full {
+    visibility: visible;
+  }
+  .logo .logo__mobile {
+    visibility: hidden;
+  }
+  @media (max-width: 767px) {
+    .logo img {
+      width: 50%;
+    }
+    .logo .logo__full {
+      visibility: hidden;
+    }
+    .logo .logo__mobile {
+      visibility: visible;
+    }
+  }

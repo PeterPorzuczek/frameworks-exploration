@@ -1,0 +1,52 @@
+<div class='footer'>
+    <div class='footer__content'>
+      <div class='footer__content--top'>
+        <div class='container clear-fix'>
+          <div class='row'>
+            <div class='col-sm-6'>
+              <div class='left-content'>
+                <h3>Sign up for newsletter</h3>
+                <p>Enter your email to receive relevant messaging tips and examples.</p>
+                <form action='#'>
+                  <input class='form-control' type='email'
+                  required='required' placeholder='Enter Your Email Id'>
+                  <input type='submit' class='btn'>
+                </form>
+              </div>
+            </div>
+            <div class='col-sm-6'>
+              <h3>We Accept</h3>
+              <p>Enter your email to receive relevant messaging tips and examples.</p>
+              <div class='payment-card'>
+                <ul>
+                  <li *ngFor='let in of [0,1,2,3,4,5]'>
+                    <img src='../assets/images/none.svg' alt='Image' class='img-fluid'>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='footer__content--bottom'>
+      <div class='container'>
+        <div class='footer__content--widget'>
+          <div class='footer-logo'>
+            <a href='#'>
+              <img src='../assets/images/none.svg' alt='Logo' class='img-fluid'>
+            </a>
+          </div>
+        </div>
+        <div  class='footer__content--widget' 
+              *ngFor="let footerSection of footerLinks">
+          <h3>{{footerSection.name}}</h3>
+          <ul>
+            <li *ngFor="let footerLink of footerSection.links">
+              <a href="{{footerLink.href}}">{{footerLink.name}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>

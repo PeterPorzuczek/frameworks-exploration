@@ -1,0 +1,24 @@
+<div class='bar'>
+    <div class='bar__content container clear-fix row'>
+      <div class='bar__content--left col row'>
+        <div class='logo'>
+          <a class='logo__full' href='#'>
+            <img  class='img-fluid'
+                  src='../assets/images/logo.svg'
+                  alt='Logo'>
+          </a>
+          <a class='logo__mobile' href='#'>
+            <img  class='img-responsive'
+                  src='../assets/images/logo.svg'
+                  alt='Logo'>
+          </a>
+        </div>
+      </div>
+      <div class='bar__content--center col row'>
+        <search></search>
+      </div>
+      <div class='bar__content--right col row'>
+        <cart class="ml-auto" [items]="items"></cart>
+      </div>
+    </div>
+  </div>

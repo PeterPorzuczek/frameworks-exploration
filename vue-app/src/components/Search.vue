@@ -1,0 +1,64 @@
+<template>
+  <div class='search'>
+    <form class='search__form' id='search'  action='#' method='get'>
+      <input  class='search__form--input'
+              name='search'
+              type='text'
+              placeholder='Search...'>
+      <button class='search__form--button' type='submit'></button>
+    </form>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Search',
+};
+</script>
+
+<style scoped>
+.search .search__form {
+  margin: auto;
+  position: relative;
+}
+.search .search__form .search__form--input {
+  position: relative;
+  display: block;
+  width: 520px;
+  height: 54px;
+  padding: 20px;
+  font-size: 1.2em;
+  border: 2px solid #1e2f5a;
+  border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+  -webkit-border-radius: 25px 25px 25px 25px;
+}
+.search .search__form .search__form--button {
+  background: #1e2f5a;
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: -2px;
+  width: 75px;
+  height: 54px;
+  text-align: center;
+  border-radius: 0 25px 25px 0;
+  -moz-border-radius: 0 25px 25px 0;
+  -webkit-border-radius: 0 25px 25px 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .search .search__form .search__form--input {
+    width: 420px;
+  }
+}
+@media (max-width: 992px) {
+  .search .search__form .search__form--input {
+    width: 320px;
+  }
+}
+@media (max-width: 767px) {
+  .search {
+      display: none;
+  }
+}
+</style>
